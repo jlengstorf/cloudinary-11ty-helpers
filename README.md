@@ -5,6 +5,24 @@ This is a collection of Eleventy Cloudinary helpers. It currently includes:
 - **A `markdown-it` plugin** that converts local images in your Markdown files to Cloudinary URLs.
 - **An async Nunjucks filter** that allows converting local images in frontmatter to Cloudinary URLs.
 
+## Why is this useful?
+
+Cloudinary offers a generous free tier, and it allows for automatica optimization, format conversion, and resizing. These utilities take advantage of this to increase your site's performance with very little effort on your part.
+
+> **NOTE:** If you don't already have a Cloudinary account, you can [sign up for free here](https://jason.af/cloudinary). If you use this link to sign up, Cloudinary sends me a few dollars without any effect on the account you create, so consider this a kind of tip jar.
+
+### Performance benefits of these utilities
+
+- **Automatic format conversion** — Cloudinary will automatically serve modern formats like WebP instead of JPEGs when the browser supports them. This cuts down on bandwidth, loading time, and file size.
+
+- **Automatic srcSet** — images in Markdown will have a [`srcset`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset) added, which has huge performance benefits, especially on smaller viewports.
+
+- **Lazy loading** — images in Markdown have [`loading="lazy"`](https://addyosmani.com/blog/lazy-loading/) added, which improves initial page load times on supported browsers.
+
+- **Automatic optimization** — Cloudinary will automatically optimize your images, which reduces the file size without impacting quality.
+
+These add up to a pretty drastic impact on your site's performance without much manual effort to get it up and running.
+
 ## Installation
 
 ```sh
