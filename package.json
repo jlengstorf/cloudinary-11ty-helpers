@@ -1,6 +1,6 @@
 {
   "name": "@jlengstorf/cloudinary-11ty-helpers",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A markdown-it plugin and Nunjucks async filter to make working with Cloudinary in Eleventy easier.",
   "type": "module",
   "source": "src/index.ts",
