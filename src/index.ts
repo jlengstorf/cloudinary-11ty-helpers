@@ -135,7 +135,6 @@ const getMdPlugin =
         );
       });
 
-      console.log({ imageCachePath, imageCache });
       writeFileSync(imageCachePath, JSON.stringify(imageCache));
     });
   };
