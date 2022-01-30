@@ -1,0 +1,48 @@
+{
+  "name": "@jlengstorf/cloudinary-11ty-helpers",
+  "version": "0.1.0",
+  "description": "A markdown-it plugin and Nunjucks async filter to make working with Cloudinary in Eleventy easier.",
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "files": [
+    "dist/**"
+  ],
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlengstorf/cloudinary-11ty-helpers.git"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "cloudinary",
+    "images",
+    "nunjucks",
+    "markdown-it",
+    "plugin",
+    "filter"
+  ],
+  "author": "Jason Lengstorf <jason@lengstorf.com> (https://jason.af)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlengstorf/cloudinary-11ty-helpers/issues"
+  },
+  "homepage": "https://github.com/jlengstorf/cloudinary-11ty-helpers#readme",
+  "devDependencies": {
+    "microbundle": "^0.14.2"
+  },
+  "dependencies": {
+    "cloudinary": "^1.28.1"
+  }
+}
